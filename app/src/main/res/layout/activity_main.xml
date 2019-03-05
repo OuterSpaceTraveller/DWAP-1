@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/BigLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topLine"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <View
+        android:id="@+id/topLine"
+        android:layout_width="386dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="14dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topText" />
+    <TextView
+        android:id="@+id/topText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="BitWeather"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="42sp"
+        android:textStyle="bold|italic"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/swipe_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Swipe to wanted direction!"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/investButton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="Invest"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:typeface="sans"
+        app:layout_constraintBottom_toTopOf="@+id/swipe_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BigLogo" />
+
+    <Button
+        android:id="@+id/notificationsButton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="Notifications"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/swipe_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/investButton"
+        app:layout_constraintVertical_bias="0.938" />
+
+    <Button
+        android:id="@+id/progressButton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="123dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="Progress"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:typeface="sans"
+        app:layout_constraintBottom_toTopOf="@+id/swipe_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/contestButton"
+        app:layout_constraintTop_toBottomOf="@+id/BigLogo" />
+
+    <Button
+        android:id="@+id/contestButton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="123dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="Contest"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:typeface="sans"
+        app:layout_constraintBottom_toTopOf="@+id/swipe_text"
+        app:layout_constraintEnd_toStartOf="@+id/progressButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BigLogo" />
+
+</android.support.constraint.ConstraintLayout>

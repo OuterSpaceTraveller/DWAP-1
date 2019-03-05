@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "302301366164",
+    "firebase_url": "https://dualweatherproject.firebaseio.com",
+    "project_id": "dualweatherproject",
+    "storage_bucket": "dualweatherproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302301366164:android:748959e7e821906c",
+        "android_client_info": {
+          "package_name": "fi.oulu.student.tuomastuokkola.dualweatherapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "302301366164-nbjjjljjgna2ib610pna51hg53r66lm7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNMo6KQv1LPIeWwtDyAl2QrwOMMMvSVJE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
