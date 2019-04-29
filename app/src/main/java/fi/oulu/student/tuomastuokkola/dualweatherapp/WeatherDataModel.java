@@ -6,23 +6,28 @@ import org.json.JSONObject;
 class WeatherDataModel {
 
     private String mTemperature;
-    private Integer mCondition;
+    private String mMain;
     private String mCity;
+    private String mDescription;
+
 
     public String getTemperature() {
         return mTemperature;
     }
-    public Integer getCondition() {
-        return mCondition;
+    public String getMain() {
+        return mMain;
     }
     public String getCity() {
         return mCity;
     }
+    public String getDescription() { return mDescription; }
+
     public static WeatherDataModel fromJson(JSONObject jsonObject) {
         try {
             WeatherDataModel weatherData = new WeatherDataModel();
             weatherData.mCity = jsonObject.getString("name");
-            weatherData.mCondition = jsonObject.getJSONArray("weather").getJSONObject(0).getInt("id");
+            weatherData.mMain = jsonObject.getJSONArray("weather").getJSONObject(0).getString("main");
+            weatherData.mDescription = jsonObject.getJSONArray("weather").getJSONObject(0).getString("description");
 
             double tempResult = jsonObject.getJSONObject("main").getDouble("temp") -273.15;
             int roundedValue = (int) Math.rint(tempResult);
