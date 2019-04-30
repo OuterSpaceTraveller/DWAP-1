@@ -56,10 +56,10 @@ public class NotificationHelper {
 
             String cryptoMessage = new String();
             String overallScoreMessage = new String();
-            cryptoMessage = "\n" + "High: " + mHigh + ", Low: " + mLow + ", \nAsk: " + mAsk + ", Volume: " + mVolume;
+            cryptoMessage = "\n\n" + "Cryptocurrency recap (Currency: BTC).\n\nHigh: " + mHigh + ". Low: " + mLow + ". \nAsk: " + mAsk + ". Volume: " + mVolume + ".";
             overallScoreMessage = "There's no easy way out.";
 
-            createNotification("Weather",mDescription + " in " + mCity + ". Temperature: " + mTemp + " °C." + cryptoMessage + "\n" + overallScoreMessage);
+            createNotification("Weather",mDescription + " in " + mCity + ". Temperature: " + mTemp + " °C." + cryptoMessage + "\n\n" + overallScoreMessage);
             Date date= new Date();
             time = date.getTime();
             LastData = new Timestamp(time);
