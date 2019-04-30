@@ -53,7 +53,13 @@ public class NotificationHelper {
     private void checkData() {
 
         if (mTemp != null && mCity != null && mMain != null && mDescription != null && mAsk != null && mHigh != null && mLow != null && mVolume != null) {
-            createNotification("Weather",mDescription + " in " + mCity);
+
+            String cryptoMessage = new String();
+            String overallScoreMessage = new String();
+            cryptoMessage = "\n" + "High: " + mHigh + ", Low: " + mLow + ", \nAsk: " + mAsk + ", Volume: " + mVolume;
+            overallScoreMessage = "There's no easy way out.";
+
+            createNotification("Weather",mDescription + " in " + mCity + ". Temperature: " + mTemp + " °C." + cryptoMessage + "\n" + overallScoreMessage);
             Date date= new Date();
             time = date.getTime();
             LastData = new Timestamp(time);
@@ -80,6 +86,8 @@ public class NotificationHelper {
         mBuilder.setSmallIcon(R.drawable.ic_launcher_background)
                 .setContentTitle(title)
                 .setContentText(message)
+                .setStyle(new NotificationCompat.BigTextStyle()
+                .bigText(message))
                 .setAutoCancel(false)
                 .setSound(Settings.System.DEFAULT_NOTIFICATION_URI)
                 .setContentIntent(resultPendingIntent);

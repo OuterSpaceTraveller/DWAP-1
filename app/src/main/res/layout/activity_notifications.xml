@@ -45,7 +45,7 @@
         app:layout_constraintBottom_toTopOf="@+id/citypreferation"
         app:layout_constraintEnd_toStartOf="@+id/btc"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/notificationstext" />
+        app:layout_constraintTop_toBottomOf="@+id/currency" />
 
     <TextView
         android:id="@+id/timezonepreferation"
@@ -89,7 +89,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btc" />
 
     <TextView
-        android:id="@+id/notificationstext"
+        android:id="@+id/currency"
         android:layout_width="144dp"
         android:layout_height="60dp"
         android:layout_marginStart="50dp"
@@ -97,7 +97,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginBottom="30dp"
         android:gravity="center"
-        android:text="Notifications"
+        android:text="Currency"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@color/colorAccent"
         android:textStyle="bold"
@@ -160,14 +160,14 @@
         android:background="@color/colorPrimaryDark"
         android:selectAllOnFocus="false"
         android:singleLine="false"
-        android:text="ON"
+        android:text="$"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="italic"
         android:typeface="sans"
         app:layout_constraintBottom_toTopOf="@+id/btc"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/notificationstext"
+        app:layout_constraintStart_toEndOf="@+id/currency"
         app:layout_constraintTop_toBottomOf="@+id/topLine" />
 
     <View
