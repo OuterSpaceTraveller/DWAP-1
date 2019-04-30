@@ -52,7 +52,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:text="Swipe to wanted direction!"
+        android:text="Tap buttons for browsing!"
         android:textColor="@android:color/black"
         android:textSize="30sp"
         android:textStyle="bold|italic"

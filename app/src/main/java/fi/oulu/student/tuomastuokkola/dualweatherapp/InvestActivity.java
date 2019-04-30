@@ -23,8 +23,8 @@ public class InvestActivity extends AppCompatActivity {
         setContentView(R.layout.activity_invest);
         motivationalButton = (Button) findViewById(R.id.tapButton);
         Intent intent = getIntent();
-        String high = intent.getStringExtra("high");
-        String low = intent.getStringExtra("low");
+        String high = intent.getStringExtra("High");
+        String low = intent.getStringExtra("Low");
         Log.d("Invest", "High: " + high);
         Log.d("Invest", "Low: " + low);
 

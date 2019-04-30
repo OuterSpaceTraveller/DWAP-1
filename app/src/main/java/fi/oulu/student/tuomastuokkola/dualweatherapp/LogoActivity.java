@@ -15,6 +15,7 @@ public class LogoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_logo);
+        // We create an intent to go into main (menu) activity.
         final Intent intent = new Intent(this, MainActivity.class);
         Button button = (Button) findViewById(R.id.tapButton);
         button.setOnClickListener(new View.OnClickListener() {
